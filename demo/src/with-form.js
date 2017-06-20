@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { PropTypes } from "prop-types";
 import MobxReactForm from "mobx-react-form";
 
 const getDisplayName = WrappedComponent => {
@@ -54,5 +55,8 @@ export default function withForm(options, WrappedComponent) {
         }
     }
     Form.displayName = `withForm(${getDisplayName(WrappedComponent)})`;
+	Form.propTypes = {
+	    initialData: PropTypes.Object,
+	};
     return Form;
 }

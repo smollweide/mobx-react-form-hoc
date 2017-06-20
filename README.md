@@ -19,7 +19,11 @@ const LoginForm = () => {
     return (
         <form>
             <fieldset>
-                <TextField label="eMail" value="text" errors={["error"]} />
+                <label htmlFor={form.$("email").id}>
+                    {form.$("email").label}
+                </label>
+                <input {...form.$("email").bind()} />
+                <p>{form.$("email").error}</p>
             </fieldset>
         </form>
     );
