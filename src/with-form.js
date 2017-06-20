@@ -55,8 +55,8 @@ export default function withForm(options, WrappedComponent) {
         }
     }
     Form.displayName = `withForm(${getDisplayName(WrappedComponent)})`;
-	Form.propTypes = {
-	    initialData: PropTypes.Object,
-	};
+    Form.propTypes = {
+        initialData: PropTypes.object
+    };
     return Form;
 }
