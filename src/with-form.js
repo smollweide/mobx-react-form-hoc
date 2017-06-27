@@ -22,7 +22,7 @@ export default function withForm(options, WrappedComponent) {
             Object.keys(this.events).forEach(key => {
                 this.events[key] = this.events[key].bind(null, props);
             });
-            MobxForm.prototype = Object.assign(MobxForm.prototype, this.events);
+            Object.assign(MobxForm.prototype, this.events);
             this.form = new MobxForm({ fields: this.fields }, { plugins: this.plugins });
         }
 

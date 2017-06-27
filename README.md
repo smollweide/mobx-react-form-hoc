@@ -1,4 +1,6 @@
-# mobx-react-form-hoc
+# mobx-react-form-hoc [![Build Status](https://img.shields.io/travis/smollweide/mobx-react-form-hoc/master.svg)](https://travis-ci.org/smollweide/mobx-react-form-hoc)
+
+> Simplify mobx-react-form by using a higher order component
 
 ## Installation
 
@@ -53,8 +55,10 @@ export default withForm({ fields, plugins, events }, observer(LoginForm));
 ## Documentation
 please have a look into the documentation of [mobx-react-form](https://github.com/foxhound87/mobx-react-form)
 
-## Contributing
+## Related
+- [mobx-react-form](https://github.com/foxhound87/mobx-react-form)
 
+## Contributing
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ### Getting started
