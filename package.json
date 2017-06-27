@@ -7,13 +7,14 @@
 	"email": "simon.mollweide@web.de",
 	"author": "Simon Mollweide <simon.mollweide@web.de>",
 	"url": "https://github.com/smollweide/mobx-react-form-hoc",
+	"homepage": "http://smollweide.github.io/mobx-react-form-hoc/",
 	"main": "index.js",
 	"peerDependencies": {
 		"react": "^15.0.0",
 		"react-dom": "^15.0.0",
 		"mobx": "^3.0.0",
 		"mobx-react": "^4.0.0",
-		"mobx-react-form": "^1.0.0",
+		"mobx-react-form": "^1.0.0"
 	},
 	"dependencies": {
 		"mobx": "^3.1.16",
@@ -53,7 +54,7 @@
 		"deploy": "gh-pages -d build",
 		"prepublish": "npm run clean:publish",
 		"publish": "npm run publish:copy-files && npm run publish:index",
-		"publish:index": "BABEL_ENV=es babel ./src/with-form.js --out-file ./publish/index.js",
+		"publish:index": "NODE_ENV=release babel ./src/with-form.js --out-file ./publish/index.js",
 		"publish:copy-files": "babel-node ./scripts/copy-files.js"
 	}
 }

@@ -3,7 +3,7 @@ import utils from "nms-core-utils";
 const rootDir = `${__dirname}/../`;
 const publishDir = `${rootDir}/publish`;
 const packagePath = `${rootDir}/package.json`;
-const files = ["README.md", "LICENSE"];
+const files = ["README.md", "LICENSE", ".npmignore"];
 
 /**
  * @param {string} srcPath - the source path to file

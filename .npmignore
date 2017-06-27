@@ -1,0 +1,11 @@
+*~
+.DS_Store
+.idea
+node_modules
+build
+publish
+.DS_Store
+.env
+npm-debug.log
+package-lock.json
+yarn.lock
