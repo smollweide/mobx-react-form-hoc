@@ -1,6 +1,6 @@
 {
 	"name": "mobx-react-form-hoc",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"private": false,
 	"license": "MIT",
 	"description": "Simplify mobx-react-form by using a higher order component.",
